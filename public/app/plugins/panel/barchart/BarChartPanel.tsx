@@ -19,6 +19,7 @@ import {
   measureText,
   PlotLegend,
   Portal,
+  PropDiffFn,
   UPlotConfigBuilder,
   UPLOT_AXIS_FONT_SIZE,
   usePanelContext,
@@ -28,7 +29,6 @@ import {
   VizLegend,
   VizTooltipContainer,
 } from '@grafana/ui';
-import { PropDiffFn } from '@grafana/ui/src/components/GraphNG/GraphNG';
 import { CloseButton } from 'app/core/components/CloseButton/CloseButton';
 
 import { DataHoverView } from '../geomap/components/DataHoverView';
