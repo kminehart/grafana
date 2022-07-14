@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
 
-import { setEchoSrv } from '@grafana/runtime/src';
+import { setEchoSrv } from '@grafana/runtime';
 import config from 'app/core/config';
 
 import { Echo } from '../../../../core/services/echo/Echo';

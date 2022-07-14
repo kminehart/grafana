@@ -1,7 +1,7 @@
 import React, { FormEvent, PureComponent } from 'react';
 
 import { AppEvents, SelectableValue } from '@grafana/data';
-import { reportInteraction } from '@grafana/runtime/src';
+import { reportInteraction } from '@grafana/runtime';
 import { ClipboardButton, Field, Modal, RadioButtonGroup, Switch, TextArea } from '@grafana/ui';
 import { appEvents } from 'app/core/core';
 
