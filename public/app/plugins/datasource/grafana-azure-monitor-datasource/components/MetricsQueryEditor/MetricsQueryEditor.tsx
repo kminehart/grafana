@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { PanelData } from '@grafana/data/src/types';
+import { PanelData } from '@grafana/data';
 import { EditorRows, EditorRow, EditorFieldGroup } from '@grafana/experimental';
 
 import type Datasource from '../../datasource';

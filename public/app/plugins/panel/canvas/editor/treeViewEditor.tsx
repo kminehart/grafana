@@ -1,4 +1,4 @@
-import { NestedPanelOptions } from '@grafana/data/src/utils/OptionsUIBuilders';
+import { NestedPanelOptions } from '@grafana/data';
 import { ElementState } from 'app/features/canvas/runtime/element';
 import { FrameState } from 'app/features/canvas/runtime/frame';
 import { Scene } from 'app/features/canvas/runtime/scene';
