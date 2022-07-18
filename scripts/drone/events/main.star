@@ -198,7 +198,6 @@ def main_pipelines(edition):
     pipelines = [docs_pipelines(edition, ver_mode, trigger), test_frontend(trigger, ver_mode), test_backend(trigger, ver_mode), pipeline(
         name='main-build-e2e-publish', edition=edition, trigger=trigger, services=[],
         steps=init_steps + build_steps,
-        volumes=volumes,
     ), integration_tests(trigger, ver_mode, edition),
     pipeline(
         name='main-windows', edition=edition, trigger=dict(trigger, repo=['grafana/grafana']),
