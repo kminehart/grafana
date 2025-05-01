@@ -16,10 +16,13 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: 'main'
-          persist-credentials: true
+          persist-credentials: false
           fetch-depth: 0
       - run: git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       - run: git config --global user.name github-actions[bot]
+      - run: git remote set-url origin "https://oauth:${TOKEN}@github.com/kminehart/grafana.git"
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Run backport
         uses: grafana/grafana-github-actions-go/backport@km/simplify-backport
         with:
