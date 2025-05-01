@@ -15,7 +15,7 @@ jobs:
     steps:
       - run: git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       - run: git config --global user.name github-actions[bot]
-      - run: git clone "https://oauth:${TOKEN}@github.com/kminehart/grafana.git"
+      - run: git clone "https://x-access-token:${TOKEN}@github.com/kminehart/grafana.git"
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Run backport
