@@ -19,8 +19,8 @@ jobs:
           persist-credentials: true
       - run: git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       - run: git config --global user.name github-actions[bot]
-      - name: Run auto-milestone
+      - name: Run backport
         uses: grafana/grafana-github-actions-go/backport@km/simplify-backport
         with:
-          token: ${{ secrets.KMINEHART_GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           binary_release_tag: test
