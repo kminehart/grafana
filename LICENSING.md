@@ -30,3 +30,5 @@ The following directories and their subdirectories are licensed under their orig
 ```
 public/vendor/
 ```
+
+test aaa
